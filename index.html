@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        /* Form container */
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Form header */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Application Form</h1>
+    <form>
+        <h2>General Question</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        
+        <label for="id">ID Number:</label>
+        <input type="text" id="id" name="id" required>
+        
+        <label for="marital-status">Marital Status:</label>
+        <select id="marital-status" name="marital-status" required>
+          <option value="">Select marital status</option>
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option>
+        </select>
+        
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+        
+        <label for="retired">Are you retired?</label>
+        <input type="checkbox" id="retired" name="retired" value="yes">
+        
+        <h2>Type of Health Coverage</h2>
+        <label for="employee">Employee:</label>
+        <input type="checkbox" id="employee" name="employee" value="yes">
+        
+        <label for="spouse">Spouse:</label>
+        <input type="checkbox" id="spouse" name="spouse" value="yes">
+        
+        <label for="children">Children:</label>
+        <input type="checkbox" id="children" name="children" value="yes">
+        
+        <h2>The Policy</h2>
+        <label for="plan">Select a plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">Select a plan</option>
+          <option value="plan1">Monthly</option>
+          <option value="plan2">3 Months</option>
+          <option value="plan3">Yearly  </option>
+        </select>
+        
+        <label for="policy-start-date">Policy Start Date:</label>
+        <input type="date" id="policy-start-date" name="policy-start-date" required>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
